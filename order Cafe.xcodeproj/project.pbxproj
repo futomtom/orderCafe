@@ -12,7 +12,45 @@
 		FA95A3EC1E73C04C001901AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA95A3EA1E73C04C001901AD /* Main.storyboard */; };
 		FA95A3EE1E73C04C001901AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA95A3ED1E73C04C001901AD /* Assets.xcassets */; };
 		FA95A3F11E73C04C001901AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA95A3EF1E73C04C001901AD /* LaunchScreen.storyboard */; };
+		FA95A4001E73C67D001901AD /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95A3FF1E73C67D001901AD /* IntentHandler.swift */; };
+		FA95A4091E73C67D001901AD /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA95A4081E73C67D001901AD /* IntentsUI.framework */; };
+		FA95A40C1E73C67D001901AD /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95A40B1E73C67D001901AD /* IntentViewController.swift */; };
+		FA95A40F1E73C67D001901AD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA95A40D1E73C67D001901AD /* MainInterface.storyboard */; };
+		FA95A4131E73C67D001901AD /* siriIntenUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FA95A4061E73C67D001901AD /* siriIntenUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FA95A4161E73C67D001901AD /* siriInten.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FA95A3FD1E73C67C001901AD /* siriInten.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA95A4111E73C67D001901AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA95A3DB1E73C04C001901AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA95A4051E73C67D001901AD;
+			remoteInfo = siriIntenUI;
+		};
+		FA95A4141E73C67D001901AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA95A3DB1E73C04C001901AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA95A3FC1E73C67C001901AD;
+			remoteInfo = siriInten;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA95A41D1E73C67D001901AD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA95A4161E73C67D001901AD /* siriInten.appex in Embed App Extensions */,
+				FA95A4131E73C67D001901AD /* siriIntenUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA95A3E31E73C04C001901AD /* order Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "order Cafe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +60,15 @@
 		FA95A3ED1E73C04C001901AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA95A3F01E73C04C001901AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA95A3F21E73C04C001901AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA95A3F81E73C63B001901AD /* order Cafe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "order Cafe.entitlements"; sourceTree = "<group>"; };
+		FA95A3FD1E73C67C001901AD /* siriInten.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = siriInten.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA95A3FF1E73C67D001901AD /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		FA95A4011E73C67D001901AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA95A4061E73C67D001901AD /* siriIntenUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = siriIntenUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA95A4081E73C67D001901AD /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		FA95A40B1E73C67D001901AD /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		FA95A40E1E73C67D001901AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FA95A4101E73C67D001901AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +79,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA95A3FA1E73C67C001901AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA95A4031E73C67D001901AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA95A4091E73C67D001901AD /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				FA95A3E51E73C04C001901AD /* order Cafe */,
+				FA95A3FE1E73C67D001901AD /* siriInten */,
+				FA95A40A1E73C67D001901AD /* siriIntenUI */,
+				FA95A4071E73C67D001901AD /* Frameworks */,
 				FA95A3E41E73C04C001901AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				FA95A3E31E73C04C001901AD /* order Cafe.app */,
+				FA95A3FD1E73C67C001901AD /* siriInten.appex */,
+				FA95A4061E73C67D001901AD /* siriIntenUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +121,7 @@
 		FA95A3E51E73C04C001901AD /* order Cafe */ = {
 			isa = PBXGroup;
 			children = (
+				FA95A3F81E73C63B001901AD /* order Cafe.entitlements */,
 				FA95A3E61E73C04C001901AD /* AppDelegate.swift */,
 				FA95A3E81E73C04C001901AD /* ViewController.swift */,
 				FA95A3EA1E73C04C001901AD /* Main.storyboard */,
@@ -62,6 +130,33 @@
 				FA95A3F21E73C04C001901AD /* Info.plist */,
 			);
 			path = "order Cafe";
+			sourceTree = "<group>";
+		};
+		FA95A3FE1E73C67D001901AD /* siriInten */ = {
+			isa = PBXGroup;
+			children = (
+				FA95A3FF1E73C67D001901AD /* IntentHandler.swift */,
+				FA95A4011E73C67D001901AD /* Info.plist */,
+			);
+			path = siriInten;
+			sourceTree = "<group>";
+		};
+		FA95A4071E73C67D001901AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA95A4081E73C67D001901AD /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA95A40A1E73C67D001901AD /* siriIntenUI */ = {
+			isa = PBXGroup;
+			children = (
+				FA95A40B1E73C67D001901AD /* IntentViewController.swift */,
+				FA95A40D1E73C67D001901AD /* MainInterface.storyboard */,
+				FA95A4101E73C67D001901AD /* Info.plist */,
+			);
+			path = siriIntenUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +169,52 @@
 				FA95A3DF1E73C04C001901AD /* Sources */,
 				FA95A3E01E73C04C001901AD /* Frameworks */,
 				FA95A3E11E73C04C001901AD /* Resources */,
+				FA95A41D1E73C67D001901AD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FA95A4121E73C67D001901AD /* PBXTargetDependency */,
+				FA95A4151E73C67D001901AD /* PBXTargetDependency */,
 			);
 			name = "order Cafe";
 			productName = "order Cafe";
 			productReference = FA95A3E31E73C04C001901AD /* order Cafe.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FA95A3FC1E73C67C001901AD /* siriInten */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA95A41A1E73C67D001901AD /* Build configuration list for PBXNativeTarget "siriInten" */;
+			buildPhases = (
+				FA95A3F91E73C67C001901AD /* Sources */,
+				FA95A3FA1E73C67C001901AD /* Frameworks */,
+				FA95A3FB1E73C67C001901AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = siriInten;
+			productName = siriInten;
+			productReference = FA95A3FD1E73C67C001901AD /* siriInten.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FA95A4051E73C67D001901AD /* siriIntenUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA95A4171E73C67D001901AD /* Build configuration list for PBXNativeTarget "siriIntenUI" */;
+			buildPhases = (
+				FA95A4021E73C67D001901AD /* Sources */,
+				FA95A4031E73C67D001901AD /* Frameworks */,
+				FA95A4041E73C67D001901AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = siriIntenUI;
+			productName = siriIntenUI;
+			productReference = FA95A4061E73C67D001901AD /* siriIntenUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +227,21 @@
 				ORGANIZATIONNAME = alex;
 				TargetAttributes = {
 					FA95A3E21E73C04C001901AD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6A7K9VGHXX;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					FA95A3FC1E73C67C001901AD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6A7K9VGHXX;
+						ProvisioningStyle = Automatic;
+					};
+					FA95A4051E73C67D001901AD = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 6A7K9VGHXX;
 						ProvisioningStyle = Automatic;
@@ -115,6 +262,8 @@
 			projectRoot = "";
 			targets = (
 				FA95A3E21E73C04C001901AD /* order Cafe */,
+				FA95A3FC1E73C67C001901AD /* siriInten */,
+				FA95A4051E73C67D001901AD /* siriIntenUI */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +279,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA95A3FB1E73C67C001901AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA95A4041E73C67D001901AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA95A40F1E73C67D001901AD /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +306,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA95A3F91E73C67C001901AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA95A4001E73C67D001901AD /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA95A4021E73C67D001901AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA95A40C1E73C67D001901AD /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA95A4121E73C67D001901AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA95A4051E73C67D001901AD /* siriIntenUI */;
+			targetProxy = FA95A4111E73C67D001901AD /* PBXContainerItemProxy */;
+		};
+		FA95A4151E73C67D001901AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA95A3FC1E73C67C001901AD /* siriInten */;
+			targetProxy = FA95A4141E73C67D001901AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FA95A3EA1E73C04C001901AD /* Main.storyboard */ = {
@@ -159,6 +352,14 @@
 				FA95A3F01E73C04C001901AD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FA95A40D1E73C67D001901AD /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA95A40E1E73C67D001901AD /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,7 +459,9 @@
 		FA95A3F61E73C04C001901AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "order Cafe/order Cafe.entitlements";
 				DEVELOPMENT_TEAM = 6A7K9VGHXX;
 				INFOPLIST_FILE = "order Cafe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -271,12 +474,66 @@
 		FA95A3F71E73C04C001901AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "order Cafe/order Cafe.entitlements";
 				DEVELOPMENT_TEAM = 6A7K9VGHXX;
 				INFOPLIST_FILE = "order Cafe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aau.order-Cafe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FA95A4181E73C67D001901AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6A7K9VGHXX;
+				INFOPLIST_FILE = siriIntenUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aau.order-Cafe.siriIntenUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA95A4191E73C67D001901AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6A7K9VGHXX;
+				INFOPLIST_FILE = siriIntenUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aau.order-Cafe.siriIntenUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FA95A41B1E73C67D001901AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6A7K9VGHXX;
+				INFOPLIST_FILE = siriInten/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aau.order-Cafe.siriInten";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA95A41C1E73C67D001901AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6A7K9VGHXX;
+				INFOPLIST_FILE = siriInten/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aau.order-Cafe.siriInten";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -298,6 +555,22 @@
 			buildConfigurations = (
 				FA95A3F61E73C04C001901AD /* Debug */,
 				FA95A3F71E73C04C001901AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA95A4171E73C67D001901AD /* Build configuration list for PBXNativeTarget "siriIntenUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA95A4181E73C67D001901AD /* Debug */,
+				FA95A4191E73C67D001901AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA95A41A1E73C67D001901AD /* Build configuration list for PBXNativeTarget "siriInten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA95A41B1E73C67D001901AD /* Debug */,
+				FA95A41C1E73C67D001901AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

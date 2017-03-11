@@ -9,10 +9,30 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>siriInten.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>siriIntenUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>FA95A3E21E73C04C001901AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA95A3FC1E73C67C001901AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA95A4051E73C67D001901AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
